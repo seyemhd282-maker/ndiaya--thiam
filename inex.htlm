@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ndiaya Thiam : coiffures, tresses et perruques à Guédiawaye.">
+  <title>Ndiaya Thiam | Beauté & Coiffure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#accueil" class="logo">NDIAYA <span>THIAM</span></a>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#modeles">Modèles</a>
+    <a href="#reservation">Réservation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="whatsapp" href="https://wa.me/221779625381">WhatsApp</a>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="hero-content">
+    <p class="small-title">BIENVENUE CHEZ NDIAYA THIAM</p>
+    <h1>Votre beauté mérite une <span>touche d'élégance.</span></h1>
+    <p>
+      Découvrez nos magnifiques modèles de tresses et de perruques.
+      Faites-vous plaisir et révélez votre beauté.
+    </p>
+    <a href="#modeles" class="btn">Découvrir nos modèles</a>
+    <a href="#reservation" class="btn btn-outline">Réserver maintenant</a>
+  </div>
+  <div class="hero-logo">
+    <div class="monogram">NT</div>
+    <h2>NDIAYA THIAM</h2>
+    <p>TRESSES • PERRUQUES • BEAUTÉ</p>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Nos prestations</h2>
+  <div class="service-grid">
+    <article>
+      <div class="symbol">✦</div>
+      <h3>Tresses</h3>
+      <p>Des coiffures élégantes et tendance.</p>
+    </article>
+    <article>
+      <div class="symbol">♕</div>
+      <h3>Perruques</h3>
+      <p>Découvrez nos différents modèles de perruques.</p>
+    </article>
+    <article>
+      <div class="symbol">♡</div>
+      <h3>Pose de perruques</h3>
+      <p>Un accompagnement pour votre nouvelle coiffure.</p>
+    </article>
+  </div>
+</section>
+
+<section class="gallery" id="modeles">
+  <p class="small-title">NOS RÉALISATIONS</p>
+  <h2>Découvrez nos modèles</h2>
+  <p class="description">
+    Choisissez votre modèle préféré et contactez-nous pour les détails.
+  </p>
+
+  <img src="images/modeles.jpeg"
+       alt="Galerie de modèles de tresses et de perruques"
+       class="models-image">
+
+  <a class="btn" target="_blank"
+     href="https://wa.me/221779625381?text=Bonjour%20Ndiaya%20Thiam%2C%20je%20voudrais%20des%20informations%20sur%20vos%20mod%C3%A8les.">
+    Commander sur WhatsApp
+  </a>
+</section>
+
+<section class="booking" id="reservation">
+  <div class="booking-intro">
+    <p class="small-title">PRENEZ RENDEZ-VOUS</p>
+    <h2>Réservez votre prochaine coiffure.</h2>
+    <p>
+      Choisissez votre prestation et indiquez la date
+      et l'heure souhaitées. Nous recevrons votre demande
+      sur WhatsApp pour confirmer votre rendez-vous.
+    </p>
+  </div>
+
+  <form id="booking-form">
+    <label for="name">Votre nom complet</label>
+    <input type="text" id="name" placeholder="Votre nom" required>
+
+    <label for="phone">Votre numéro de téléphone</label>
+    <input type="tel" id="phone" placeholder="Votre numéro" required>
+
+    <label for="service">Prestation souhaitée</label>
+    <select id="service" required>
+      <option value="">Choisir une prestation</option>
+      <option>Tresses</option>
+      <option>Achat de perruque</option>
+      <option>Pose de perruque</option>
+      <option>Autre prestation</option>
+    </select>
+
+    <label for="date">Date souhaitée</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Heure souhaitée</label>
+    <input type="time" id="time" required>
+
+    <label for="details">Précisions supplémentaires</label>
+    <textarea id="details" rows="4"
+      placeholder="Décrivez le modèle que vous souhaitez..."></textarea>
+
+    <button type="submit" class="btn">
+      Envoyer ma réservation
+    </button>
+    <p class="form-note">
+      Votre rendez-vous sera confirmé après échange avec la boutique.
+    </p>
+  </form>
+</section>
+
+<section class="contact" id="contact">
+  <p class="small-title">NOUS CONTACTER</p>
+  <h2>Nous sommes à votre écoute.</h2>
+
+  <div class="contact-grid">
+    <div>
+      <h3>Notre adresse</h3>
+      <p>Guédiawaye, Hamo Tefess</p>
+    </div>
+
+    <div>
+      <h3>WhatsApp</h3>
+      <a href="https://wa.me/221779625381">77 962 53 81</a>
+    </div>
+
+    <div>
+      <h3>Téléphone fixe</h3>
+      <a href="tel:+221338370615">33 837 06 15</a>
+    </div>
+  </div>
+
+  <a class="btn" href="https://wa.me/221779625381">
+    Nous écrire sur WhatsApp
+  </a>
+</section>
+
+<footer>
+  <h2>NDIAYA THIAM</h2>
+  <p>Tresses • Perruques • Beauté</p>
+  <p>Guédiawaye, Hamo Tefess</p>
+  <p>© <span id="year"></span> Ndiaya Thiam</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
